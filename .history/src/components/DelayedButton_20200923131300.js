@@ -5,7 +5,7 @@ export default class DelayedButton extends Component{
 
     
     handelClick = (event) => {
-        const callBack = () => this.props.onDelayedClick
+        const callBack = () => this.props.onDelayedClick()
         // console.log(this.props.delay)
         setTimeout(callBack(event), this.props.delay)
         
